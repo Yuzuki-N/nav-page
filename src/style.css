@@ -13,15 +13,27 @@ ul, ol {
     list-style: none;
 }
 
+a {
+    color: inherit; text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 /* styles */
 
 .globalHeader {
     margin: 20px;
+    
+}
+.searchForm {
     display: flex;
     justify-content: space-between;
 }
 
-.globalHeader > input {
+.searchForm > input {
     width: 100%;
     margin-right: 10px;
     padding: 0px 10px;
@@ -30,7 +42,7 @@ ul, ol {
     height: 40px;
 }
 
-.globalHeader > button {
+.searchForm > button {
     white-space: nowrap;
     padding: 0 28px;
     border: none;
@@ -84,4 +96,30 @@ ul, ol {
 
 .siteList .addButton{
     width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+    border: 1px solid #ddd;
+    background: white;
+}
+
+.siteList .addButton .icon{
+    width: 56px;
+    height: 56px;
+}
+
+.siteList .addButton .text{
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+
+.siteList .addButton .icon-wrapper{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
