@@ -24,6 +24,15 @@ img {
 
 /* styles */
 
+@media (min-width: 500px) {
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        padding: 1px;
+        background-color: rgb(243, 242, 242);
+    }
+}
+
 .globalHeader {
     margin: 20px;
     
@@ -138,10 +147,14 @@ img {
     position: absolute;
     right: 10px;
     top: 5px;
-    display: none;
     cursor: default;
 }
 
+@media (min-width: 500px) {
+    .siteList .site > .close {
+        display: none;
+    }
+}
 
 .siteList .site:hover > .close {
     display: block;
@@ -177,4 +190,4 @@ img {
     align-items: center;
 }
 
-/*# sourceMappingURL=style.293f80e0.css.map */
+/*# sourceMappingURL=style.0c1126b5.css.map */

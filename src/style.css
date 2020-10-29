@@ -24,6 +24,15 @@ img {
 
 /* styles */
 
+@media (min-width: 500px) {
+    body {
+        min-width: 100vw;
+        min-height: 100vh;
+        padding: 1px;
+        background-color: rgb(243, 242, 242);
+    }
+}
+
 .globalHeader {
     margin: 20px;
     
