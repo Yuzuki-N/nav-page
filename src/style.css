@@ -138,10 +138,14 @@ img {
     position: absolute;
     right: 10px;
     top: 5px;
-    display: none;
     cursor: default;
 }
 
+@media (min-width: 500px) {
+    .siteList .site > .close {
+        display: none;
+    }
+}
 
 .siteList .site:hover > .close {
     display: block;
